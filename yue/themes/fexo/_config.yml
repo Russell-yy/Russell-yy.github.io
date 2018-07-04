@@ -23,7 +23,7 @@ home_nav:
     url: https://github.com/russell-yy
     target_blank: true
   - name: BiliBili
-    url: https://space.bilibili.com/252535274/
+    url: https://space.bilibili.com/252535274
     traget_blank: true
 #  - name: Twitter
 #    url: https://twitter.com/forsigner
@@ -202,7 +202,7 @@ about:
 #    text_value_url: http://weibo.com/u/1847075964
   - type: mail
     icon: icon-mail
-    text_key: gmail
+    text_key: QQ mail
     text_value: "418833586@qq.com"
   - type: location
     icon: icon-location
@@ -236,10 +236,10 @@ link:
 
 
 project:
-#  - type: personal
-#    name: fexo
-#    url: https://github.com/forsigner/fexo
-#    intro: A minimalist design theme for hexo
+  - type: personal
+    name: fexo
+    url: https://github.com/forsigner/fexo
+    intro: A minimalist design theme for hexo
   # - type: company
   #   name: Fexo
   #   url: https://github.com/forsigner/fexo
