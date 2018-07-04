@@ -8,7 +8,7 @@ bottom_saying: Struggle to Learn
 # Content
 excerpt_link: Read More
 
-#rss: /atom.xml
+rss: /atom.xml
 
 highlightjs: vs
 
@@ -38,6 +38,11 @@ github: https://github.com/russell-yy
 #facebook: https://www.facebook.com/
 #google: https://google.com/
 #weibo: http://weibo.com/
+
+menu:
+  home: /
+  essay: /categories/essay
+  code: /categories/code
 
 #about  timeline
 timeline:
