@@ -19,6 +19,14 @@ works:
 - works_name: BBB
   works_url: /atom.xml
 
+# Archives
+## 2: Enable pagination
+## 1: Disable pagination
+## 0: Fully Disable
+archive: 1
+category: 1
+tag: 1
+
 #duoshuo name
 duoshuo:
 
