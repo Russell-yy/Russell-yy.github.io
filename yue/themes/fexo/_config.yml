@@ -20,11 +20,11 @@ home_nav:
     url: /project/
     target_blank: true #在新页面打开
   - name: Github
-    url: https://github.com/forsigner
+    url: https://github.com/russell-yy
     target_blank: true
-  - name: Twitter
-    url: https://twitter.com/forsigner
-    target_blank: true
+#  - name: Twitter
+#    url: https://twitter.com/forsigner
+#    target_blank: true
 
 # config page nav
 page_nav:
