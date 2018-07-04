@@ -19,6 +19,12 @@ works:
 - works_name: BBB
   works_url: /atom.xml
 
+category:
+- category_name: /categories/essay
+- category_name: /categories/code
+
+
+
 # Archives
 ## 2: Enable pagination
 ## 1: Disable pagination
@@ -31,7 +37,7 @@ tag: 1
 duoshuo:
 
 #disqus name
-disqus_shortname:
+disqus_shortname: 
 
 #fancybox
 fancybox: true
