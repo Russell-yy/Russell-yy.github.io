@@ -19,6 +19,12 @@ highlightjs: vs
 #- works_name: BBB
 #  works_url: /atom.xml
 
+menu:
+  home: /
+  categories: /categories
+  archives: /archives
+  tags: /tags
+
 #duoshuo name
 duoshuo:
 
