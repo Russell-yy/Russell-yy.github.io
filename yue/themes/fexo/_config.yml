@@ -1,6 +1,6 @@
 # Blog info
-blog_name: Forsigner
-slogan: Find the bug of the world
+blog_name: Yue
+slogan: Struggle to Learn
 url: http://www.forsigner.com
 
 # Set avatar (Absolute url and relative url)
@@ -22,6 +22,9 @@ home_nav:
   - name: Github
     url: https://github.com/russell-yy
     target_blank: true
+  - name: BiliBili
+    url: https://space.bilibili.com/252535274/
+    traget_blank: true
 #  - name: Twitter
 #    url: https://twitter.com/forsigner
 #    target_blank: true
@@ -67,7 +70,7 @@ search_slogan:
 
 link_slogan:
   isShow: true # true|fase
-  text: 交换友链可以邮件 forsigner@gmail.com
+  text: 交换友链可以邮件 418833586@qq.com
 
 
 # set backtop show or hide
