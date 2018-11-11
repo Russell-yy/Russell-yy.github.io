@@ -79,17 +79,17 @@
 
 
 
-<meta name="description" content="最近压力真得很大，事情像潮水一样涌来，完全无法应对。昨天晚上从图书馆回来，p2p路过我却没有停下来，那一瞬间真得是委屈得哭了出来。排散不掉的孤独感，致命的无力，强烈的自我怀疑，对未来的恐惧。我决定要做出些改变了。按照事情的紧急性来做事，紧急而不重要的少花时间，重点放在紧急而且重要的事情和重要但不紧急的事情上。对不起，我的作业们，你们在我的优先级上降低了。或许有些课拿不到H了，但是没办法，生活就是妥">
-<meta property="og:type" content="website">
-<meta property="og:title" content="临近崩溃的调整">
-<meta property="og:url" content="http://russell-yy.github.io/to_be_post/崩溃的边缘.html">
+<meta name="description" content="Basic Structures3 Steps for Deep LearningStep1: Neural NetworkStep2: Cost FunctionStep3: Optimization Brief Introduction of Deep Learning1958: Perceptron (Linear Model)1969: Perceptron has limitatio">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Notes on Theory of Point Estimation">
+<meta property="og:url" content="http://russell-yy.github.io/2018/11/10/DLnotes/index.html">
 <meta property="og:site_name" content="Yue">
-<meta property="og:description" content="最近压力真得很大，事情像潮水一样涌来，完全无法应对。昨天晚上从图书馆回来，p2p路过我却没有停下来，那一瞬间真得是委屈得哭了出来。排散不掉的孤独感，致命的无力，强烈的自我怀疑，对未来的恐惧。我决定要做出些改变了。按照事情的紧急性来做事，紧急而不重要的少花时间，重点放在紧急而且重要的事情和重要但不紧急的事情上。对不起，我的作业们，你们在我的优先级上降低了。或许有些课拿不到H了，但是没办法，生活就是妥">
+<meta property="og:description" content="Basic Structures3 Steps for Deep LearningStep1: Neural NetworkStep2: Cost FunctionStep3: Optimization Brief Introduction of Deep Learning1958: Perceptron (Linear Model)1969: Perceptron has limitatio">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-10-29T12:58:51.000Z">
+<meta property="og:updated_time" content="2018-11-11T06:19:09.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="临近崩溃的调整">
-<meta name="twitter:description" content="最近压力真得很大，事情像潮水一样涌来，完全无法应对。昨天晚上从图书馆回来，p2p路过我却没有停下来，那一瞬间真得是委屈得哭了出来。排散不掉的孤独感，致命的无力，强烈的自我怀疑，对未来的恐惧。我决定要做出些改变了。按照事情的紧急性来做事，紧急而不重要的少花时间，重点放在紧急而且重要的事情和重要但不紧急的事情上。对不起，我的作业们，你们在我的优先级上降低了。或许有些课拿不到H了，但是没办法，生活就是妥">
+<meta name="twitter:title" content="Notes on Theory of Point Estimation">
+<meta name="twitter:description" content="Basic Structures3 Steps for Deep LearningStep1: Neural NetworkStep2: Cost FunctionStep3: Optimization Brief Introduction of Deep Learning1958: Perceptron (Linear Model)1969: Perceptron has limitatio">
 
 
 
@@ -119,13 +119,13 @@
 
 
 
-  <link rel="canonical" href="http://russell-yy.github.io/to_be_post/崩溃的边缘.html"/>
+  <link rel="canonical" href="http://russell-yy.github.io/2018/11/10/DLnotes/"/>
 
 
 
 
 
-  <title>临近崩溃的调整 | Yue</title>
+  <title>Notes on Theory of Point Estimation | Yue</title>
   
 
 
@@ -264,34 +264,240 @@
 
   <div id="posts" class="posts-expand">
     
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://russell-yy.github.io/2018/11/10/DLnotes/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Yue">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Yue">
+    </span>
+
     
-    
-    <div class="post-block page">
       <header class="post-header">
 
-	<h1 class="post-title" itemprop="name headline">临近崩溃的调整</h1>
-
-
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
         
         
-          <p>最近压力真得很大，事情像潮水一样涌来，完全无法应对。<br>昨天晚上从图书馆回来，p2p路过我却没有停下来，那一瞬间真得是委屈得哭了出来。<br>排散不掉的孤独感，致命的无力，强烈的自我怀疑，对未来的恐惧。<br>我决定要做出些改变了。按照事情的紧急性来做事，紧急而不重要的少花时间，重点放在紧急而且重要的事情和重要但不紧急的事情上。<br>对不起，我的作业们，你们在我的优先级上降低了。或许有些课拿不到H了，但是没办法，生活就是妥协的过程。强者得兼，而我，只能根据情况做出选择。<br>打电话给妈妈诉苦，妈妈叫我一定要抽空锻练身体，补充点营养，多休息。发现不是我一个人在战斗，至少我的家人还在我身后。<br>事情要一件件的做，给下次崩溃的时候的自己提一个小建议，着手去做吧，随便做哪一样，只要开始了，就会发现一切都变简单了。</p>
-
+          <h1 class="post-title" itemprop="name headline">Notes on Theory of Point Estimation</h1>
         
-      </div>
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-11-10T00:00:00-05:00">
+                2018-11-10
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Notes-on-Deep-Learning/" itemprop="url" rel="index">
+                    <span itemprop="name">Notes on Deep Learning</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/11/10/DLnotes/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2018/11/10/DLnotes/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Words count in article&#58;</span>
+                
+                <span title="Words count in article">
+                  196
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Reading time &asymp;</span>
+                
+                <span title="Reading time">
+                  1
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
       
+
+      
+        <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
+
+<h1 id="Basic-Structures"><a href="#Basic-Structures" class="headerlink" title="Basic Structures"></a>Basic Structures</h1><h2 id="3-Steps-for-Deep-Learning"><a href="#3-Steps-for-Deep-Learning" class="headerlink" title="3 Steps for Deep Learning"></a>3 Steps for Deep Learning</h2><p>Step1: Neural Network<br>Step2: Cost Function<br>Step3: Optimization</p>
+<h2 id="Brief-Introduction-of-Deep-Learning"><a href="#Brief-Introduction-of-Deep-Learning" class="headerlink" title="Brief Introduction of Deep Learning"></a>Brief Introduction of Deep Learning</h2><p>1958: Perceptron (Linear Model)<br>1969: Perceptron has limitation<br>1980: Multi-layer perceptron</p>
+<blockquote>
+<p>Do not have siginificant difference from DNN today</p>
+</blockquote>
+<p>1986: Backpropagation</p>
+<blockquote>
+<p>Credit to Hinton<br>Usually more than 3 layers is not helpful</p>
+</blockquote>
+<p>1989: 1 hidden layer is “good enough”, why deep?<br>2006: RBM(Restricted Boltzman Machine) initilization (breakthrough)</p>
+<blockquote>
+<p>Not much helpful, 石头汤里的石头</p>
+</blockquote>
+<p>2009: GPU<br>2001: Start to be popular in speech recognition<br>2012: Win ILSVRC image competition</p>
+<p>3 steps:<br>Define a set of function<br>Goodness of function<br>Pick the best function</p>
+<blockquote>
+<p>You need to decide the network to let the good function be in your function set.</p>
+</blockquote>
+<p>How many layers? How many neurons for each layer? </p>
+<blockquote>
+<p>Trial and Error + Intuition</p>
+</blockquote>
+<p>Can the structure be automatically determined?</p>
+<blockquote>
+<p>Evolutionary Artificial Neural Networks</p>
+</blockquote>
+<p>Deep is better?</p>
+<blockquote>
+<p>Not surprised. More parameters, better performance.<br>Universality Theorem:<br>Any continuous function f<br>$$ f: R^{N} \to R^{M} $$<br>can be realized by a network with one hidden layer (given enough hidden neurons)</p>
+</blockquote>
+<p>Alexnet, VGG, GoogleNet, Residual Net</p>
+<h2 id="Basic-Structure"><a href="#Basic-Structure" class="headerlink" title="Basic Structure"></a>Basic Structure</h2><p>Fully Connected Layer<br>Recurrent Structure<br>Convolutional / Pooling Layer</p>
+<h2 id="Special-Structure"><a href="#Special-Structure" class="headerlink" title="Special Structure"></a>Special Structure</h2><p>Spatial Transformation Layer<br>Highway Network / Grid STM<br>Recursive Structure<br>External Memory<br>Batch Normalization<br>Sequence-to-sequence / Attention </p>
+
       
     </div>
     
     
     
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/11/08/最近喜欢的音乐/" rel="next" title="最近喜欢的音乐">
+                <i class="fa fa-chevron-left"></i> 最近喜欢的音乐
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/11/10/点估计理论/" rel="prev" title="Notes on Theory of Point Estimation">
+                Notes on Theory of Point Estimation <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
   </div>
 
 
@@ -334,8 +540,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -386,6 +601,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Basic-Structures"><span class="nav-number">1.</span> <span class="nav-text">Basic Structures</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#3-Steps-for-Deep-Learning"><span class="nav-number">1.1.</span> <span class="nav-text">3 Steps for Deep Learning</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Brief-Introduction-of-Deep-Learning"><span class="nav-number">1.2.</span> <span class="nav-text">Brief Introduction of Deep Learning</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Basic-Structure"><span class="nav-number">1.3.</span> <span class="nav-text">Basic Structure</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Special-Structure"><span class="nav-number">1.4.</span> <span class="nav-text">Special Structure</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -552,9 +783,9 @@
     
       <script type="text/javascript">
         var disqus_config = function () {
-          this.page.url = 'http://russell-yy.github.io/to_be_post/崩溃的边缘.html';
-          this.page.identifier = 'to_be_post/崩溃的边缘.html';
-          this.page.title = '临近崩溃的调整';
+          this.page.url = 'http://russell-yy.github.io/2018/11/10/DLnotes/';
+          this.page.identifier = '2018/11/10/DLnotes/';
+          this.page.title = 'Notes on Theory of Point Estimation';
         };
         var d = document, s = d.createElement('script');
         s.src = 'https://ywhy-name-2.disqus.com/embed.js';

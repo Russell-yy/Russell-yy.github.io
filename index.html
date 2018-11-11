@@ -645,6 +645,224 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://russell-yy.github.io/2018/11/10/DLnotes/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Yue">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Yue">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/11/10/DLnotes/" itemprop="url">Notes on Theory of Point Estimation</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-11-10T00:00:00-05:00">
+                2018-11-10
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Notes-on-Deep-Learning/" itemprop="url" rel="index">
+                    <span itemprop="name">Notes on Deep Learning</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/11/10/DLnotes/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2018/11/10/DLnotes/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Words count in article&#58;</span>
+                
+                <span title="Words count in article">
+                  196
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Reading time &asymp;</span>
+                
+                <span title="Reading time">
+                  1
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
+
+<h1 id="Basic-Structures"><a href="#Basic-Structures" class="headerlink" title="Basic Structures"></a>Basic Structures</h1><h2 id="3-Steps-for-Deep-Learning"><a href="#3-Steps-for-Deep-Learning" class="headerlink" title="3 Steps for Deep Learning"></a>3 Steps for Deep Learning</h2><p>Step1: Neural Network<br>Step2: Cost Function<br>Step3: Optimization</p>
+<h2 id="Brief-Introduction-of-Deep-Learning"><a href="#Brief-Introduction-of-Deep-Learning" class="headerlink" title="Brief Introduction of Deep Learning"></a>Brief Introduction of Deep Learning</h2><p>1958: Perceptron (Linear Model)<br>1969: Perceptron has limitation<br>1980: Multi-layer perceptron</p>
+<blockquote>
+<p>Do not have siginificant difference from DNN today</p>
+</blockquote>
+<p>1986: Backpropagation</p>
+<blockquote>
+<p>Credit to Hinton<br>Usually more than 3 layers is not helpful</p>
+</blockquote>
+<p>1989: 1 hidden layer is “good enough”, why deep?<br>2006: RBM(Restricted Boltzman Machine) initilization (breakthrough)</p>
+<blockquote>
+<p>Not much helpful, 石头汤里的石头</p>
+</blockquote>
+<p>2009: GPU<br>2001: Start to be popular in speech recognition<br>2012: Win ILSVRC image competition</p>
+<p>3 steps:<br>Define a set of function<br>Goodness of function<br>Pick the best function</p>
+<blockquote>
+<p>You need to decide the network to let the good function be in your function set.</p>
+</blockquote>
+<p>How many layers? How many neurons for each layer? </p>
+<blockquote>
+<p>Trial and Error + Intuition</p>
+</blockquote>
+<p>Can the structure be automatically determined?</p>
+<blockquote>
+<p>Evolutionary Artificial Neural Networks</p>
+</blockquote>
+<p>Deep is better?</p>
+<blockquote>
+<p>Not surprised. More parameters, better performance.<br>Universality Theorem:<br>Any continuous function f<br>$$ f: R^{N} \to R^{M} $$<br>can be realized by a network with one hidden layer (given enough hidden neurons)</p>
+</blockquote>
+<p>Alexnet, VGG, GoogleNet, Residual Net</p>
+<h2 id="Basic-Structure"><a href="#Basic-Structure" class="headerlink" title="Basic Structure"></a>Basic Structure</h2><p>Fully Connected Layer<br>Recurrent Structure<br>Convolutional / Pooling Layer</p>
+<h2 id="Special-Structure"><a href="#Special-Structure" class="headerlink" title="Special Structure"></a>Special Structure</h2><p>Spatial Transformation Layer<br>Highway Network / Grid STM<br>Recursive Structure<br>External Memory<br>Batch Normalization<br>Sequence-to-sequence / Attention </p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://russell-yy.github.io/2018/11/08/最近喜欢的音乐/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1958,193 +2176,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://russell-yy.github.io/2018/10/11/特应性皮炎/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Yue">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Yue">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/10/11/特应性皮炎/" itemprop="url">无法归因与造假</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-10-11T00:00:00-04:00">
-                2018-10-11
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/life/" itemprop="url" rel="index">
-                    <span itemprop="name">life</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2018/10/11/特应性皮炎/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2018/10/11/特应性皮炎/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Words count in article&#58;</span>
-                
-                <span title="Words count in article">
-                  322
-                </span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Reading time &asymp;</span>
-                
-                <span title="Reading time">
-                  1
-                </span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>人这一辈子遭遇的事情，很大一部分都是无法归因的。</p>
-<p>就像是我发现最近自己的黑头变干净了一点，我实在无法辨别其减少的原因。最近新增加使用的产品有烟酰胺和A醇，但谁知道究竟是哪个起作用？或者说，是两个产品与的交叉作用，又或是它们与我一直在使用的B5和玻尿酸共同的交叉作用？更可能的是，夏去秋至，人体自然调节，分泌的油脂减少，所以黑头自己变少了呢。</p>
-<p>无法归因的事这么多，可是统计要做的事就包括推断、归因。前段时间一个康奈尔的食品科学家被多次撤稿，原因涉及到他根据自己的设想来特意设计实验、主观截取部分实验数据以达到想要的结论。不是故意黑生物学家，事实上我对那些很有创见、刻苦实验的生物学家非常敬佩，但是，由于生物学科领域的特殊性，这种学术造假的情况不少。</p>
-<p>对自己的底限是，论文里绝对不要写自己心底里觉得犯嘀咕的东西。</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -2195,7 +2226,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">14</span>
+                  <span class="site-state-item-count">15</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -2206,7 +2237,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">categories</span>
                 </a>
               </div>
@@ -2259,7 +2290,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">4.5k</span>
+    <span title="Site words total count">4.7k</span>
   
 </div>
 
