@@ -273,7 +273,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://russell-yy.github.io/2018/11/10/bios765/">
+    <link itemprop="mainEntityOfPage" href="http://russell-yy.github.io/2018/11/13/DLnotes/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Yue">
@@ -292,7 +292,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/11/10/bios765/" itemprop="url">Notes on BIOS 765</a></h1>
+                <a class="post-title-link" href="/2018/11/13/DLnotes/" itemprop="url">Notes on Deep Learning</a></h1>
         
 
         <div class="post-meta">
@@ -304,8 +304,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-11-10T00:00:00-05:00">
-                2018-11-10
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-11-13T00:00:00-05:00">
+                2018-11-13
               </time>
             
 
@@ -345,9 +345,9 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2018/11/10/bios765/#comments" itemprop="discussionUrl">
+                <a href="/2018/11/13/DLnotes/#comments" itemprop="discussionUrl">
                   <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2018/11/10/bios765/" itemprop="commentCount"></span>
+                        data-disqus-identifier="2018/11/13/DLnotes/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -369,7 +369,7 @@
                   <span class="post-meta-item-text">Words count in article&#58;</span>
                 
                 <span title="Words count in article">
-                  0
+                  228
                 </span>
               
 
@@ -409,6 +409,47 @@
         
           
             <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
+
+<h1 id="Basic-Structures"><a href="#Basic-Structures" class="headerlink" title="Basic Structures"></a>Basic Structures</h1><h2 id="3-Steps-for-Deep-Learning"><a href="#3-Steps-for-Deep-Learning" class="headerlink" title="3 Steps for Deep Learning"></a>3 Steps for Deep Learning</h2><p>Step1: Neural Network<br>Step2: Cost Function<br>Step3: Optimization</p>
+<h2 id="Brief-Introduction-of-Deep-Learning"><a href="#Brief-Introduction-of-Deep-Learning" class="headerlink" title="Brief Introduction of Deep Learning"></a>Brief Introduction of Deep Learning</h2><p>1958: Perceptron (Linear Model)<br>1969: Perceptron has limitation<br>1980: Multi-layer perceptron</p>
+<blockquote>
+<p>Do not have siginificant difference from DNN today</p>
+</blockquote>
+<p>1986: Backpropagation</p>
+<blockquote>
+<p>Credit to Hinton<br>Usually more than 3 layers is not helpful</p>
+</blockquote>
+<p>1989: 1 hidden layer is “good enough”, why deep?<br>2006: RBM(Restricted Boltzman Machine) initilization (breakthrough)</p>
+<blockquote>
+<p>Not much helpful, 石头汤里的石头</p>
+</blockquote>
+<p>2009: GPU<br>2001: Start to be popular in speech recognition<br>2012: Win ILSVRC image competition</p>
+<p>3 steps:<br>Define a set of function<br>Goodness of function<br>Pick the best function</p>
+<blockquote>
+<p>You need to decide the network to let the good function be in your function set.</p>
+</blockquote>
+<p>How many layers? How many neurons for each layer? </p>
+<blockquote>
+<p>Trial and Error + Intuition</p>
+</blockquote>
+<p>Can the structure be automatically determined?</p>
+<blockquote>
+<p>Evolutionary Artificial Neural Networks</p>
+</blockquote>
+<p>Deep is better?</p>
+<blockquote>
+<p>Not surprised. More parameters, better performance.<br>Universality Theorem:<br>Any continuous function f<br>$$ f: R^{N} \to R^{M} $$<br>can be realized by a network with one hidden layer (given enough hidden neurons)</p>
+</blockquote>
+<p>Why “Deep” neural network not “Fat” neural network?</p>
+<blockquote>
+</blockquote>
+<p>Alexnet, VGG, GoogleNet, Residual Net</p>
+<h2 id="CNN"><a href="#CNN" class="headerlink" title="CNN"></a>CNN</h2><h3 id="Convolution"><a href="#Convolution" class="headerlink" title="Convolution"></a>Convolution</h3><p>Compared to FCN, less parameters, shared weights!<br>The number of chanel is the number of filters.</p>
+<h3 id="Max-Pooling"><a href="#Max-Pooling" class="headerlink" title="Max Pooling"></a>Max Pooling</h3><p>Combine results.<br>How to differentiate?</p>
+<h3 id="Calculate-Parameters"><a href="#Calculate-Parameters" class="headerlink" title="Calculate Parameters"></a>Calculate Parameters</h3><p><img src="pa.png" alt=""></p>
+<h2 id="Basic-Structure"><a href="#Basic-Structure" class="headerlink" title="Basic Structure"></a>Basic Structure</h2><p>Fully Connected Layer<br>Recurrent Structure<br>Convolutional / Pooling Layer</p>
+<h2 id="Special-Structure"><a href="#Special-Structure" class="headerlink" title="Special Structure"></a>Special Structure</h2><p>Spatial Transformation Layer<br>Highway Network / Grid STM<br>Recursive Structure<br>External Memory<br>Batch Normalization<br>Sequence-to-sequence / Attention </p>
+
           
         
       
@@ -645,7 +686,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://russell-yy.github.io/2018/11/10/DLnotes/">
+    <link itemprop="mainEntityOfPage" href="http://russell-yy.github.io/2018/11/10/bios765/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Yue">
@@ -664,7 +705,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/11/10/DLnotes/" itemprop="url">Notes on Theory of Point Estimation</a></h1>
+                <a class="post-title-link" href="/2018/11/10/bios765/" itemprop="url">Notes on BIOS 765</a></h1>
         
 
         <div class="post-meta">
@@ -699,8 +740,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Notes-on-Deep-Learning/" itemprop="url" rel="index">
-                    <span itemprop="name">Notes on Deep Learning</span>
+                  <a href="/categories/Notes/" itemprop="url" rel="index">
+                    <span itemprop="name">Notes</span>
                   </a>
                 </span>
 
@@ -717,9 +758,9 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2018/11/10/DLnotes/#comments" itemprop="discussionUrl">
+                <a href="/2018/11/10/bios765/#comments" itemprop="discussionUrl">
                   <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2018/11/10/DLnotes/" itemprop="commentCount"></span>
+                        data-disqus-identifier="2018/11/10/bios765/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -741,7 +782,7 @@
                   <span class="post-meta-item-text">Words count in article&#58;</span>
                 
                 <span title="Words count in article">
-                  196
+                  0
                 </span>
               
 
@@ -781,41 +822,6 @@
         
           
             <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
-
-<h1 id="Basic-Structures"><a href="#Basic-Structures" class="headerlink" title="Basic Structures"></a>Basic Structures</h1><h2 id="3-Steps-for-Deep-Learning"><a href="#3-Steps-for-Deep-Learning" class="headerlink" title="3 Steps for Deep Learning"></a>3 Steps for Deep Learning</h2><p>Step1: Neural Network<br>Step2: Cost Function<br>Step3: Optimization</p>
-<h2 id="Brief-Introduction-of-Deep-Learning"><a href="#Brief-Introduction-of-Deep-Learning" class="headerlink" title="Brief Introduction of Deep Learning"></a>Brief Introduction of Deep Learning</h2><p>1958: Perceptron (Linear Model)<br>1969: Perceptron has limitation<br>1980: Multi-layer perceptron</p>
-<blockquote>
-<p>Do not have siginificant difference from DNN today</p>
-</blockquote>
-<p>1986: Backpropagation</p>
-<blockquote>
-<p>Credit to Hinton<br>Usually more than 3 layers is not helpful</p>
-</blockquote>
-<p>1989: 1 hidden layer is “good enough”, why deep?<br>2006: RBM(Restricted Boltzman Machine) initilization (breakthrough)</p>
-<blockquote>
-<p>Not much helpful, 石头汤里的石头</p>
-</blockquote>
-<p>2009: GPU<br>2001: Start to be popular in speech recognition<br>2012: Win ILSVRC image competition</p>
-<p>3 steps:<br>Define a set of function<br>Goodness of function<br>Pick the best function</p>
-<blockquote>
-<p>You need to decide the network to let the good function be in your function set.</p>
-</blockquote>
-<p>How many layers? How many neurons for each layer? </p>
-<blockquote>
-<p>Trial and Error + Intuition</p>
-</blockquote>
-<p>Can the structure be automatically determined?</p>
-<blockquote>
-<p>Evolutionary Artificial Neural Networks</p>
-</blockquote>
-<p>Deep is better?</p>
-<blockquote>
-<p>Not surprised. More parameters, better performance.<br>Universality Theorem:<br>Any continuous function f<br>$$ f: R^{N} \to R^{M} $$<br>can be realized by a network with one hidden layer (given enough hidden neurons)</p>
-</blockquote>
-<p>Alexnet, VGG, GoogleNet, Residual Net</p>
-<h2 id="Basic-Structure"><a href="#Basic-Structure" class="headerlink" title="Basic Structure"></a>Basic Structure</h2><p>Fully Connected Layer<br>Recurrent Structure<br>Convolutional / Pooling Layer</p>
-<h2 id="Special-Structure"><a href="#Special-Structure" class="headerlink" title="Special Structure"></a>Special Structure</h2><p>Spatial Transformation Layer<br>Highway Network / Grid STM<br>Recursive Structure<br>External Memory<br>Batch Normalization<br>Sequence-to-sequence / Attention </p>
-
           
         
       
@@ -2237,7 +2243,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">categories</span>
                 </a>
               </div>
