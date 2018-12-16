@@ -87,7 +87,7 @@
 <meta property="og:description" content="Basic Structures3 Steps for Deep LearningStep1: Neural NetworkStep2: Cost FunctionStep3: Optimization Basic StructureFully Connected LayerRecurrent StructureConvolutional / Pooling Layer Special Str">
 <meta property="og:locale" content="default">
 <meta property="og:image" content="http://russell-yy.github.io/images/pa.png">
-<meta property="og:updated_time" content="2018-11-13T12:50:53.000Z">
+<meta property="og:updated_time" content="2018-11-13T14:07:48.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Notes on Deep Learning">
 <meta name="twitter:description" content="Basic Structures3 Steps for Deep LearningStep1: Neural NetworkStep2: Cost FunctionStep3: Optimization Basic StructureFully Connected LayerRecurrent StructureConvolutional / Pooling Layer Special Str">
@@ -307,7 +307,7 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-11-13T00:00:00-05:00">
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-11-13T00:00:00+08:00">
                 2018-11-13
               </time>
             
@@ -372,7 +372,7 @@
                   <span class="post-meta-item-text">Words count in article&#58;</span>
                 
                 <span title="Words count in article">
-                  228
+                  321
                 </span>
               
 
@@ -448,8 +448,17 @@
 </blockquote>
 <p>Alexnet, VGG, GoogleNet, Residual Net</p>
 <h1 id="CNN"><a href="#CNN" class="headerlink" title="CNN"></a>CNN</h1><h2 id="Convolution"><a href="#Convolution" class="headerlink" title="Convolution"></a>Convolution</h2><p>Compared to FCN, less parameters, shared weights!<br>The number of chanel is the number of filters.</p>
-<h2 id="Max-Pooling"><a href="#Max-Pooling" class="headerlink" title="Max Pooling"></a>Max Pooling</h2><p>Combine results.<br>How to differentiate?</p>
+<h2 id="Max-Pooling"><a href="#Max-Pooling" class="headerlink" title="Max Pooling"></a>Max Pooling</h2><p>Subsampling.<br>Combine results.<br>How to differentiate?</p>
 <h2 id="Calculate-Parameters"><a href="#Calculate-Parameters" class="headerlink" title="Calculate Parameters"></a>Calculate Parameters</h2><p><img src="/images/pa.png" alt=""></p>
+<h2 id="What-does-CNN-learn"><a href="#What-does-CNN-learn" class="headerlink" title="What does CNN learn?"></a>What does CNN learn?</h2><p>Degree of activation of the k-th filter.<br>For input X, do gradient ascent. (Treat model parameters as fixed, and X as changeable)</p>
+<h2 id="Why-CNN"><a href="#Why-CNN" class="headerlink" title="Why CNN?"></a>Why CNN?</h2><p>Some patterns are much smaller than the whole image.<br>The same patterns appear in different regions.</p>
+<blockquote>
+<p>Alpha go: 19<em>19</em>48<br>19*19 Size of checkerboard<br>48 Use 48 values to describe each position<br>Do not use Max Pooling</p>
+</blockquote>
+<blockquote>
+<p>Speech: Spectrogram<br>x-axis - Time<br>y-axis - Frequency<br>The filters move in the frequency direction<br>Then consider time influence in further network (LSTN)</p>
+<p>Text: Word Sequence<br>word embedding<br>The filters move in the sequence direction</p>
+</blockquote>
 
       
     </div>
@@ -615,7 +624,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Basic-Structures"><span class="nav-number">1.</span> <span class="nav-text">Basic Structures</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#3-Steps-for-Deep-Learning"><span class="nav-number">1.1.</span> <span class="nav-text">3 Steps for Deep Learning</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Basic-Structure"><span class="nav-number">1.2.</span> <span class="nav-text">Basic Structure</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Special-Structure"><span class="nav-number">1.3.</span> <span class="nav-text">Special Structure</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Brief-Introduction-of-Deep-Learning"><span class="nav-number">2.</span> <span class="nav-text">Brief Introduction of Deep Learning</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#CNN"><span class="nav-number">3.</span> <span class="nav-text">CNN</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Convolution"><span class="nav-number">3.1.</span> <span class="nav-text">Convolution</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Max-Pooling"><span class="nav-number">3.2.</span> <span class="nav-text">Max Pooling</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Calculate-Parameters"><span class="nav-number">3.3.</span> <span class="nav-text">Calculate Parameters</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Basic-Structures"><span class="nav-number">1.</span> <span class="nav-text">Basic Structures</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#3-Steps-for-Deep-Learning"><span class="nav-number">1.1.</span> <span class="nav-text">3 Steps for Deep Learning</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Basic-Structure"><span class="nav-number">1.2.</span> <span class="nav-text">Basic Structure</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Special-Structure"><span class="nav-number">1.3.</span> <span class="nav-text">Special Structure</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Brief-Introduction-of-Deep-Learning"><span class="nav-number">2.</span> <span class="nav-text">Brief Introduction of Deep Learning</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#CNN"><span class="nav-number">3.</span> <span class="nav-text">CNN</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Convolution"><span class="nav-number">3.1.</span> <span class="nav-text">Convolution</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Max-Pooling"><span class="nav-number">3.2.</span> <span class="nav-text">Max Pooling</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Calculate-Parameters"><span class="nav-number">3.3.</span> <span class="nav-text">Calculate Parameters</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#What-does-CNN-learn"><span class="nav-number">3.4.</span> <span class="nav-text">What does CNN learn?</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Why-CNN"><span class="nav-number">3.5.</span> <span class="nav-text">Why CNN?</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -649,7 +658,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">4.7k</span>
+    <span title="Site words total count">4.5k</span>
   
 </div>
 
